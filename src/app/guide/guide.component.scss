@@ -1,0 +1,181 @@
+@import './src/assets/css/module/all';
+
+h1,h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h1 {
+    color: color(h1);
+    font-weight: bold;
+}
+h2 {
+    color: color(h2);
+    font-size: 1.2rem;
+}
+.reserve ,.rooming, .agree, .visit {
+    padding: 2rem;
+    text-align: center;
+    >img {
+        margin-bottom: 1rem;
+    }
+}
+.reserve {
+    a {
+        font-weight: bold;
+        display: block;
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}
+.rooming {
+    >p {
+        font-size: 1.1rem;
+    }
+    >a {
+        font-weight: bold;
+    }
+    dt {
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+}
+.agree {
+    p {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        border: 1px solid color(header-bg);
+        height: 40px;
+        line-height: 40px;
+    }
+}
+.visit {
+    >p {
+        font-size: 1.1rem;
+    }
+    dt {
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    dd {
+        margin: 0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+
+}
+.cost {
+    caption {
+        text-align: left;
+    }
+    .tit {
+        display: block;
+        color: color(cost-gold);
+    }
+    .point {
+        color: color(cost-gold);
+    }
+    .table {
+        &.inc-care {
+            margin-top: 2rem;
+        }
+        thead {
+            th {
+                padding: 0.8rem 0;
+                background: #77563c;
+                &.gradient {
+                    background: rgb(119,86,60);
+background: -moz-linear-gradient(left, rgba(119,86,60,1) 18%, rgba(193,151,106,1) 100%);
+background: -webkit-linear-gradient(left, rgba(119,86,60,1) 18%,rgba(193,151,106,1) 100%);
+background: linear-gradient(to right, rgba(119,86,60,1) 18%,rgba(193,151,106,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77563c', endColorstr='#c1976a',GradientType=1 );
+                }
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+        .service {
+            color: color(cost-gold);
+        }
+        th {
+            border: 1px solid color(line);
+            background: color(header-bg);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 100;
+        }
+        td {
+            border: 1px solid color(line);
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0.4rem 0;
+            span {
+                display: inline-block;
+                &.dc {
+                    display: block;
+                    color: color(cost-gold);
+                }
+            }
+        }
+        .week2 {
+            td {
+                font-size: 1rem;
+            }
+        }
+        tbody {
+            th {
+                background-color: color(cost-gold);
+            }
+        }
+    }
+    >p {
+        color: color(cost-gold);
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+}
+.agree-content {
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    background-color: color(darkgray);
+    width: $full_w;
+    min-height: 100vh;
+    @include transition(0.5);
+    &.show {
+        top: 50px;
+        @include transition(0.5);
+    }
+    h3 {
+        color: #fff;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        @include same-size(20px);
+    }
+    textarea {
+        width: 90%;
+        height: calc(100vh - 200px);
+        display: block;
+        margin: 0 auto;
+        background: transparent;
+        border: 0;
+        color: #fff;
+    }
+}
+
+

@@ -1,0 +1,97 @@
+@import './src/assets/css/module/all';
+.center {
+    padding: 2rem 0;
+}
+
+h1,h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+h1 {
+    color: color(h1);
+    font-weight: bold;
+}
+h2 {
+    color: color(h2);
+    font-size: 1.4rem;
+    .sup {
+        display: block;
+        font-size: 0.9rem;
+        color: color(h2-small);
+        padding-top: 0.2rem;
+    }
+}
+ul {
+    margin-top: 2rem;
+}
+li {
+    padding: 0.1rem 0;
+    font-size: 0.9rem;
+    text-align: left;
+    @extend %clearfix;
+    img {
+        display: block;
+        float: left;
+        height: 30px;
+        vertical-align: top;
+        margin-top: -2px;
+    }
+    span {
+        float: left;
+        display: block;
+        width: 85%;
+        // font-size: 0.9rem;
+        padding-left: 0.6rem;
+        color: color(darkgray);
+    }
+}
+.mother-room-1, .mother-room-2, .spa, .infant-room, .breast-feeding {
+    padding: 2rem;
+    text-align: center;
+}
+// .mother-room-1 {
+//     >p {
+//         font-size: 1.2rem;
+//         font-weight: bold;
+//         letter-spacing: -0.4px;
+//         line-height: 23px;
+//         color: color(consult-close-btn-bg);
+//         &:nth-child(odd) {
+//             margin-bottom: 1rem;
+//         }
+//     }
+// }
+.sub-tit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    line-height: 23px;
+    color: color(consult-close-btn-bg);
+    &:nth-child(odd) {
+        margin-bottom: 1rem;
+    }
+}
+.mother-room-2, .spa, .infant-room {
+    background: #fdf2f1;
+    // .sub-info {
+    //     font-size: 1.4rem;
+    //     font-weight: bold;
+    //     color: color(consult-close-btn-bg);
+    //     &:nth-child(odd) {
+    //         margin-bottom: 1rem;
+    //     }
+    // }
+    .explain {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+}
+.spa {
+    background: #fff;
+}
+.tit-img {
+    display: block;
+    margin: 0 auto;
+}

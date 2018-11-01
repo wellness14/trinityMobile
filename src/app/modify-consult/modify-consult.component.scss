@@ -1,0 +1,93 @@
+@import './src/assets/css/module/all';
+
+textarea {
+    width: 100%;
+}
+input {
+    &[type=checkbox] {
+        vertical-align: middle;
+    }
+    &[type=submit] {
+        background-color: transparent;
+        border-radius: 0;
+        // border: 1px solid color(header-bg);
+        color: color(text);
+    }
+    &[type=date] {
+        width: 100%;
+    }
+}
+.request-consult {
+    width: 100%;
+    border-top: 2px solid color(header-bg);
+    border-bottom: 2px solid color(header-bg);
+    tr {
+        border-bottom: 1px solid color(line);
+    }
+    th {
+        padding: 0.4rem 0;
+        font-weight: normal;
+        font-size: 0.9rem;
+    }
+    td {
+        padding: 0.4rem 0;
+        input, textarea {
+            font-size: 0.9rem;
+            width: $full_w;
+            border: 1px solid color(line);
+            @include borderRadius(4px);
+        }
+        input {
+            padding: 0.2rem;
+            &[type=checkbox] {
+                width: initial;
+            }
+        }
+        textarea {
+            height: 120px;
+        }
+        .page_lock {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+tbody {
+    td {
+        padding-bottom: .5rem;
+    }
+}
+.agree_content {
+    margin-top: 1rem;
+    height: 80px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    color: color(gray);
+}
+.private_info_agree {
+    font-size: 0.8rem;
+}
+
+
+.btn--wrap {
+    margin: 1rem auto;
+    @extend %clearfix;
+    li {
+        float: left;
+        width: 30%;
+        text-align: center;
+        &.goModify {
+            margin: 0 5%;
+            input {
+                font-size: 14px;
+                font-family: "Noto Sans KR";
+            }
+        }
+    }
+    a {
+        display: block;
+        border: 1px solid color(line);
+        // padding: 0.4rem 0;
+        font-size: 14px;
+    }
+}

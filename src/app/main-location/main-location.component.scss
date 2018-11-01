@@ -1,0 +1,8 @@
+@import './src/assets/css/module/all';
+
+.main-location {
+    padding: 0;
+    agm-map {
+        height: 200px;
+    }
+}

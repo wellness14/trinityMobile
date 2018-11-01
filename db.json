@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "HTML",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "content": "CSS",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "content": "Javascript",
+      "completed": false
+    },
+    {
+      "content": "값이 있으면 doGET()에 의해서 리스트에 보일거임.",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<footer id="footer" ngsRevealSet [ngsSelector]="'.item7'">
+  <ul>
+    <li class="footer-1dep">
+      <h3 class="item7" routerLink="/">HOME</h3>
+      <ul class="footer-2dep">
+        <li routerLink="/" fragment="main-greet" class="item7"><a href="#main-greet">인사말/소개</a></li>
+        <li routerLink="/" fragment="main-feature" class="item7"><a href="#main-feature">트리니티 특징</a></li>
+        <li routerLink="/" fragment="main-partner" class="item7"><a href="#main-partner">파트너</a></li>
+        <li routerLink="/" fragment="main-location" class="item7"><a href="#main-location" >오시는 길</a></li>
+      </ul>
+    </li>
+    <li class="footer-1dep">
+      <h3 class="item7" routerLink="center">CENTER</h3>
+      <ul class="footer-2dep">
+        <li routerLink="center" class="item7"><a>산모실</a></li>
+        <li routerLink="center" class="item7"><a>스파</a></li>
+        <li routerLink="center" class="item7"><a>신생아실</a></li>
+        <li routerLink="center" class="item7"><a>모유수유센터</a></li>
+      </ul>
+    </li>
+    <li class="footer-1dep">
+      <h3 class="item7" routerLink="service">SERVICE</h3>
+      <ul class="footer-2dep">
+        <li routerLink="service" class="item7"><a>신생아</a></li>
+        <li routerLink="service" class="item7"><a>산모</a></li>
+        <li routerLink="service" class="item7"><a>의료</a></li>
+        <li routerLink="service" class="item7"><a>음식</a></li>
+      </ul>
+    </li>
+    <li class="footer-1dep">
+      <h3 class="item7" routerLink="guide">GUIDE</h3>
+      <ul class="footer-2dep">
+        <li routerLink="guide" class="item7"><a>예약안내</a></li>
+        <li routerLink="guide" class="item7"><a>입실준비</a></li>
+        <li routerLink="guide" class="item7"><a>이용약관</a></li>
+        <li routerLink="guide" class="item7"><a>면회안내</a></li>
+        <li routerLink="guide" class="item7"><a>비용안내</a></li>
+      </ul>
+    </li>
+    <!-- <li class="footer-1dep">
+      <h3>COMMUNITY</h3>
+      <ul class="footer-2dep">
+        <li><a>공지</a></li>
+        <li><a>이벤트</a></li>
+        <li><a>이용후기</a></li>
+      </ul>
+    </li> -->
+  </ul>
+  <hr>
+  <div class="item7">
+  <address class="address">{{ addr }}</address>
+  <a href="tel:{{ tel }}" class="tel">Tel. {{ tel }}</a>
+  <span class="fax">Fax. {{ fax }}</span><br/>
+  <a href="mailto:info@trinitycare.co.kr" class="mail">Mail. info@trinitycare.co.kr</a>  
+  <p>
+    <span class="license-num">{{ license }}</span>
+    <span class="boss">대표: 서동필</span>
+    <span class="director">대표원장: {{ director }}</span>
+  </p>
+  <p class="copyright">&copy; copyright 2018 trinitycare all rights reserved. </p>
+  </div>
+</footer>
+

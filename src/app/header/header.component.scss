@@ -1,0 +1,165 @@
+@import './src/assets/css/module/all';
+
+header {
+    width: $header_w;
+    height: $header_h;
+    background-color: color(header-bg);
+    color: color(header-txt);
+    position: fixed;
+    z-index: 1000;
+    h1 {
+        height: $header_h;
+    }
+    a {
+        color: color(header-txt);
+        &:visited {
+            color: color(header-txt);
+        }
+        &.header_btn {
+            @extend %header_btn;
+            &.consult {
+                right: 0;
+            }
+        }
+        &.go-ss {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 14px;
+            padding-top: 16px;
+            border-radius: 50%;
+            background: color(header-bg);
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            border: 0;
+            font-size: 10px;
+        }
+    }
+    .logo {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        &_m {
+            // margin-top: 4px;
+            height: 50px;
+        }
+    }
+    .consult-btn {
+        height: 30px;
+        margin-top: -4px;
+    }
+    .hamburger {
+        height: 14px;
+        margin-top: -6px;
+    }
+    .fa.fa-btc {
+        font-size: 18px;
+        vertical-align: middle;
+    }
+}
+nav {
+    top: 0;
+    width: $nav_w;
+    height: $nav_h;
+    padding: 3rem 1.4rem 6rem;
+    position: fixed;
+    transform: translateX(-110%);
+    z-index: 1100;
+    overflow-y: scroll;
+    // background: url('/assets/img/white_carbon.png') repeat;
+    background-color: #fff;
+    @include transition(0.5);
+    @extend %z-depth-2;
+    &.show {
+        transform: translateX(0);
+        @include transition(0.5);
+    }
+    .nav-close {
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        @include same-size(25px);
+    }
+    .nav-logo {
+        img {
+            // width: 100px;
+            margin: 0 auto;
+            display: block;
+            height: 80px;
+        }
+    }
+    .consult {
+        margin-top: 2rem;
+    }
+    .extend {
+        color: color(normal);
+    }
+}
+
+.nav-menu {
+    // margin-top: 1.5rem;   
+    
+    a{
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        color: color(header-bg) !important;
+        text-transform: uppercase;
+        &.go-another {
+            color: #fff !important;
+            background: color(header-bg);
+            font-size: 10px;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    }
+    span {
+        display: inline-block;
+        width: 40px;
+        img {
+            margin: -2px auto 0;
+        }   
+    }
+    p {
+        color: color(header-bg) !important;
+        font-size: 0.8rem;
+    }
+}
+.dep2 {
+    margin-left: 20px;
+    li {
+        a {
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+
+// 온라인상담 우측 슬라이드
+// .online-consult {
+//     top: 0;
+//     width: 100%;
+//     height: $nav_h;
+//     padding: 2rem;
+//     position: fixed;
+//     transform: translateX(0);
+//     background-color: color(header-bg);
+//     @include transition(0.5);
+//     &.show {
+//         transform: translateX(0);
+//         @include transition(0.5);
+//     }
+// }
+
+
+
+
+
+

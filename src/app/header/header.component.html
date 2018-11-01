@@ -1,0 +1,190 @@
+<header>
+  <!-- 메뉴 버튼 -->
+  <a class="hamberger header_btn" (click)="toggle()">
+    <img [src]="hamburgerSrc" alt="메뉴버튼" class="hamburger">
+  </a>
+  <!-- 로고 -->
+  <h1> 
+    <a class="logo" routerLink="">
+      <!-- <img [src]="trinityLogo" alt="모바일로고" class="logo_m" *ngIf="_data.centerLocation == 'cd'"> -->
+      <img [src]="trinityLogo" alt="모바일로고" class="logo_m" *ngIf="centerLocation == 'cd'">
+      <img [src]="trinityLogoSS" alt="모바일로고" class="logo_m" *ngIf="centerLocation == 'ss'">
+    </a>
+  </h1>
+  <!-- 상담 버튼 -->
+  <!-- <a routerLink="requestConsult" class="consult header_btn">
+    <img [src]="consultBtnSrc" alt="상담버튼" class="consult-btn">
+  </a> -->
+  <a [href]="tel" class="consult header_btn" onclick="gtag('event','click',{'event_category': 'call'})">
+    <!-- <img [src]="consultBtnSrc" alt="상담버튼" class="consult-btn"> -->
+    <img [src]="phone" alt="전화상담버튼" class="consult-btn">
+  </a>
+
+  <!-- <a href="#!" class="go-ss" target="_blank"></a> -->
+  <a href="{{ center_link }}" *ngIf="is_ss" class="go-ss" target="_blank" onclick="gtag('event','click',{'event_category': 'ss-to-cd' })">{{ center }}<br/>둘러보기</a>
+  <a href="{{ center_link }}" *ngIf="!is_ss" class="go-ss" target="_blank" onclick="gtag('event','click',{'event_category': 'cd-to-ss' })">{{ center }}<br/>둘러보기</a>
+
+  <!-- <a class="consult header_btn" (click)="consultToggle()"><i class="fa fa-phone" aria-hidden="true"></i></a> -->
+  <!-- <div class="online-consult" [ngClass]="{'show': consultShow}">
+    <app-online-consult></app-online-consult>
+  </div> -->
+  
+
+  <!-- 메뉴 -->
+  <nav [ngClass]="{'show': show}">
+    <a class="nav-close" (click)="toggle()"><img [src]="closeBtn" alt="사이드내비 닫기버튼"></a>
+    <!-- <ul (click)="toggle()" class="nav-menu">
+      <li><a routerLink="">
+        home</a>
+      </li>
+      <li routerLink="" fragment="main-greet">
+        <a href="#main-greet">
+          about trinity</a>
+      </li>
+      <li routerLink="" fragment="main-feature">
+        <a href="#main-feature">
+          accommodations</a>
+      </li>
+      <li>
+        <a routerLink="center">
+        trinity center</a>
+      </li>
+      <li>
+        <a routerLink="service">
+        trinity service</a>
+      </li>
+      <li>
+        <a routerLink="guide">
+        trinity guide</a>
+      </li>
+      <li routerLink="" fragment="main-partner">
+        <a href="#main-partner">
+          partners</a>
+      </li>
+      <li class="consult">
+        <a routerLink="onlineConsult">
+          - 상담 리스트</a>
+      </li>
+      <li>
+        <a routerLink="price">
+          - 이용요금</a>
+      </li>
+      <li>
+        <a routerLink="requestConsult">
+          - 상담신청</a>
+      </li>
+      <li [ngClass]="{'hide': hide}">
+        <p>* 방문상담 시간연장 : 평일저녁 8시까지</p>
+      </li>
+    </ul> -->
+
+
+    <ul (click)="toggle()" class="nav-menu">
+      <li>
+        <small [ngClass]="{'hide': hide}" class="extend">
+          * 방문상담 시간연장 : 평일저녁 8시까지
+        </small>
+        <a routerLink="requestConsult" class="go-another">상담신청</a>
+        <a href="{{ center_link }}"  *ngIf="is_ss" class="go-another" target="_blank" onclick="gtag('event','click',{'event_category': 'ss-to-cd' })">{{ center }} 둘러보기</a>
+        <a href="{{ center_link }}"  *ngIf="!is_ss" class="go-another" target="_blank" onclick="gtag('event','click',{'event_category': 'cd-to-ss' })">{{ center }} 둘러보기</a>
+      </li>
+      <li>
+        <a routerLink="">
+          home</a>
+        <ul class="dep2">
+          <li routerLink="" fragment="main-greet">
+            <a href="#main-greet">
+              - 인사말/소개</a>
+          </li>
+          <li routerLink="" fragment="main-feature">
+            <a href="#main-feature">
+              - 트리니티 특징</a>
+          </li>
+          <li routerLink="" fragment="main-partner">
+            <a href="#main-partner">
+              - 파트너</a>
+          </li>
+          <li routerLink="" fragment="main-location">
+            <a href="#main-location">
+              - 오시는 길</a>
+          </li>
+        </ul>
+      </li>
+      
+      
+      <li>
+        <a routerLink="center">
+          center</a>
+        <ul class="dep2">
+          <li routerLink="center" fragment="room">
+            <a href="#room">
+              - 산모실</a>
+          </li>
+          <li routerLink="center" fragment="spa">
+            <a href="#spa">
+              - 스파</a>
+          </li>
+          <li routerLink="center" fragment="infant-room">
+            <a href="#infant-room">
+              - 신생아실</a>
+          </li>
+          <li routerLink="center" fragment="loctaion">
+            <a href="#loctaion">
+              - 모유수유센터</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="service">
+          service</a>
+        <ul class="dep2">
+          <li routerLink="service" fragment="infant">
+            <a href="#infant">
+              - 신생아</a>
+          </li>
+          <li routerLink="service" fragment="mother">
+            <a href="#mother">
+              - 산모</a>
+          </li>
+          <li routerLink="service" fragment="medi">
+            <a href="#medi">
+              - 의료</a>
+          </li>
+          <li routerLink="service" fragment="food">
+            <a href="#food">
+              - 음식</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="guide">
+          guide</a>
+        <ul class="dep2">
+          <li routerLink="guide" fragment="reserve">
+            <a href="#reserve">
+              - 예약안내</a>
+          </li>
+          <li routerLink="guide" fragment="rooming">
+            <a href="#rooming">
+              - 입실준비</a>
+          </li>
+          <li routerLink="guide" fragment="agree">
+            <a href="#agree">
+              - 이용약관</a>
+          </li>
+          <li routerLink="guide" fragment="visit">
+            <a href="#visit">
+              - 면회안내</a>
+          </li>
+          <li routerLink="price" fragment="cost">
+            <a href="#cost">
+              - 비용안내</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav> 
+</header> 
+
+
+

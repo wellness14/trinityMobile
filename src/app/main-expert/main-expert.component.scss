@@ -1,0 +1,58 @@
+@import './src/assets/css/module/all';
+
+.main-expert {
+    padding: 3rem 0;
+    border: 1px solid color(line);
+    h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: color(h2);
+        .sup {
+            display: block;
+            font-size: 0.9rem;
+            padding-top: 0.2rem;
+            color: color(h2-small);
+        }
+    }
+}
+.content {
+    .swiper-slide {
+        h4 {
+            padding: 1rem 2rem 0;
+            small {
+                color: color(h2-small);
+            }
+        }
+        // img {
+        //     width: 80%;
+        //     display: block;
+        //     margin: 0 auto;
+        // }
+    }
+    .brief {
+        padding: 1rem 2rem;
+        li {
+            font-size: 0.9rem;
+            color: color(normal);
+            &:first-child {
+                border-top: 1px solid color(line);
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+.profile--wrap {
+    // background: red;
+    width: 80%;
+    margin: 0 auto;
+    @extend %z-depth-1-half;
+    @include borderRadius(4px);
+}
+.swiper-pagination {
+    bottom: 0;
+    
+}
+.swiper-slide {
+    padding-bottom: 2rem !important;
+}

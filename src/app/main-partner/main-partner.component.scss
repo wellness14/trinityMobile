@@ -1,0 +1,29 @@
+@import './src/assets/css/module/all';
+
+.main-partner {
+    margin-top: 2rem;
+    h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: color(h2);
+        .sub {
+            display: block;
+            font-size: 0.9rem;
+            padding-bottom: 0.2rem;
+            color: color(h2-small);
+        }
+    }
+}
+ul{
+    @extend %clearfix;
+}
+li{
+    width: 50%;
+    float: left;
+    img{
+        width: 65%;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}

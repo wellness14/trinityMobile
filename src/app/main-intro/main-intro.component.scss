@@ -1,0 +1,29 @@
+@import './src/assets/css/module/all';
+
+.main-intro {
+    background-color: color(header-bg);
+    color: #fff;
+    min-height: $sec_height;
+    padding: 2rem;
+    // position: relative;
+}
+
+.intro-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 100;
+}
+.title {
+    // text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    line-height: 30px;
+    font-weight: bold;
+}

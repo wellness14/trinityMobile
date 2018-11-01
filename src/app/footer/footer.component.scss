@@ -1,0 +1,51 @@
+@import './src/assets/css/module/all';
+
+footer {
+    padding: 1rem;
+    background-color: color(header-bg);
+    color: color(header-txt);
+    >ul {
+        @extend %clearfix;
+    }
+    .footer-1dep {
+        float: left;
+        width: 25%;
+        h3 {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+    }
+    .footer-2dep {
+        a{
+            color: color(header-txt);
+            font-size: 0.7rem;
+            text-align: center;
+            display: block;
+            padding: 0.4rem 0;
+        }
+    }
+    hr {
+        margin: 2rem 0;
+    }
+    .address {
+        font-size: 0.8rem;
+    }
+    .tel,.mail,.fax{
+        color: color(header-txt);
+        font-size: 1rem;
+        display: inline-block;
+        padding-right: 1rem;
+    }
+    .license-num, .boss, .director {
+        font-size: 0.8rem;
+    }
+    .copyright {
+        font-size: 0.7rem;
+        color: color(gray);
+    }
+}
+.gradient {
+    
+}

@@ -1,0 +1,160 @@
+<section class="service" ngsRevealSet [ngsSelector]="'.item2'">
+  <h1 class="item2">Trinity Service</h1>
+  <div class="infant-care item2" id="infant">
+    <h2>
+      <strong>신생아케어</strong>
+      <small class="sup">Baby care</small>
+    </h2>
+    <img [src]="service1" alt="신생아케어" class="tit-img">
+    <ul>
+      <li>
+        <img [src]="infantCare1" alt="서비스아이콘">
+        <span>체계적인 신생아 관리</span>
+      </li>
+      <li>
+        <img [src]="infantCare2" alt="서비스아이콘">
+        <span>소규모 신생아실 운영</span>
+      </li>
+      <li>
+        <img [src]="infantCare3" alt="서비스아이콘">
+        <span>신생아실 전용 환기 시스템 설치</span>
+      </li>
+      <li>
+        <img [src]="infantCare4" alt="서비스아이콘">
+        <span>{{ round }}</span>
+      </li>
+      <li>
+        <img [src]="infantCare5" alt="서비스아이콘">
+        <span>신생아 모니터링 캠 설치</span>
+      </li>
+      <li>
+        <img [src]="infantCare6" alt="서비스아이콘">
+        <span>전직원 응급상황 관리교육 이수</span>
+      </li>
+      <li>
+        <img [src]="infantCare7" alt="서비스아이콘">
+        <span>젖병실명제, 친환경 신생아 용품만을 사용</span>
+      </li>
+      <li>
+        <img [src]="infantCare8" alt="서비스아이콘">
+        <span>ACO인증 유기농, 천연 원료로 만든 제품 사용</span>
+      </li>
+      <li>
+        <img [src]="infantCare9" alt="서비스아이콘">
+        <span>폴스베이비의 고급 앨범 서비스(만삭, 신생아, 신생아 50일)</span>
+      </li>
+      <li>
+        <img [src]="infantCare10" alt="서비스아이콘">
+        <span>무혈황달 측정기 비치</span>
+      </li>
+      <li>
+        <img [src]="medi4" alt="서비스아이콘">
+        <span>{{ ipcam }}</span>
+      </li>
+      <li>
+        <img [src]="infantCare11" alt="서비스아이콘">
+        <span>기저귀 패킹 시스템으로 간단, 청결한 위생관리</span>
+      </li>
+      <li>
+        <img [src]="infantCare12" alt="서비스아이콘">
+        <span>스마트뮤로 신생아실의 공기질과 모유냉장고의 온도관리</span>
+      </li>
+      <li>
+        <img [src]="infantCare13" alt="서비스아이콘">
+        <span>태블릿PC로 아기의 건강기록을 스마트하게 관리</span>
+      </li>
+    </ul>
+  </div>
+  <div class="mother-care item2" id="mother">
+    <h2>
+      <strong>산모 케어</strong>
+      <small class="sup">Maternal Health care</small>
+    </h2>
+    <img [src]="service2" alt="신생아케어" class="tit-img">
+    <ul>
+      <li [ngClass]="{'hide': hide}">
+        <img [src]="infantCare1" alt="서비스아이콘">
+        <span>연앤네이처 산부인과 전문의 회진 주 1회</span>
+      </li>
+      <li>
+        <img [src]="motherCare2" alt="서비스아이콘">
+        <span>산모실 비치 : 공기청정기, 좌욕기, 메델라 유축기, 신생아 바운서, {{ bed }}</span>
+      </li>
+      <li>
+        <img [src]="motherCare6" alt="서비스아이콘">
+        <span>모유수유실, 유방관리실, 요가실, 전문교육실</span>
+      </li>
+      <li>
+        <img [src]="motherCare3" alt="서비스아이콘">
+        <span>산모님을 위한 전문적인 식사 제공</span>
+      </li>
+      <li>
+        <img [src]="motherCare4" alt="서비스아이콘">
+        <span>산후 요가 주 2회(총 4회)</span>
+      </li>
+      <li>
+        <img [src]="motherCare5" alt="서비스아이콘">
+        <span>강남구 이용자수 1위, 마더앤베이비 산후도우미와의 연계를 통해 퇴실 후 체계적인 지원을 합니다.</span>
+      </li>
+    </ul>
+  </div>
+  <div class="medi-support item2" id="medi">
+    <h2>
+      <strong>의료 지원</strong>
+      <small class="sup">Medical care</small>
+    </h2>
+    <img [src]="service3" alt="신생아케어" class="tit-img">
+    <ul>
+      <li class="hide">
+        <img [src]="medi1" alt="서비스아이콘">
+        <span>청담마리 산부인과 전문의 1회 방문(드레싱 포함)</span>
+      </li>
+      <li [ngClass]="{'hide': hide}">
+        <img [src]="medi2" alt="서비스아이콘">
+        <span>청담마리 소아과 전문의 주 2회 방문</span>
+      </li>
+      <li>
+        <img [src]="medi3" alt="서비스아이콘">
+        <span>한의원 회진, 한약 옵션 제공</span>
+      </li>
+      <li>
+        <img [src]="medi4" alt="서비스아이콘">
+        <span>골반 교정 전문가 선생님께서 직접 관리</span>
+      </li>
+    </ul>
+  </div>
+  <div class="food-therapy item2" id="food">
+    <h2>
+      <strong>음식</strong>
+      <small class="sup">Food Theraphy</small>
+    </h2>
+    <!-- 청담 : 시작 -->
+    <!-- <img [src]="service4" alt="음식케어" class="tit-img"> -->
+    <!-- 청담 : 끝 -->
+    <!-- 삼성 : 시작 -->
+    <img [src]="service4ss" alt="음식케어" class="tit-img">
+    <!-- 삼성 : 끝 -->
+    <ul>
+      <li>
+        <img [src]="food1" alt="서비스아이콘">
+        <span>제철 식재료로 계절에 맞는 영양</span>
+      </li>
+      <li>
+        <img [src]="food2" alt="서비스아이콘">
+        <span>모유수유에 도움이 되는 메뉴를 꾸준히 개발</span>
+      </li>
+      <!-- <li>
+        <img [src]="food3" alt="서비스아이콘">
+        <span>산전, 산후에 발생한 질환을 위해 회복식</span>
+      </li> -->
+      <!-- <li>
+        <img [src]="food4" alt="서비스아이콘">
+        <span>당뇨식과 갑상선질환식, 알라딘질환 대체식 제공</span>
+      </li> -->
+      <li>
+        <img [src]="food5" alt="서비스아이콘">
+        <span>1일 3회 식사, 3회 간식</span>
+      </li>
+    </ul>
+  </div>
+</section>

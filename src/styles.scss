@@ -1,0 +1,33 @@
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../src/assets/css/main';
+
+
+/* You can add global styles to this file, and also import other style files */
+// 문서전체적으로 공통적용될 css
+
+body {
+    // max-width: 414px;
+    // margin: 0 auto;
+}
+.container {
+    min-height: calc(100vh-50px);
+    // min-height: 100vh;
+    padding-top: $header_h;
+}
+section {
+    padding: 1rem;
+}
+.online-consult--wrap {
+    padding: 2rem;
+}
+.swiper-pagination-bullet-active {
+    background-color: color(header-bg);
+}
+.swiper-pagination.profile {
+    .swiper-pagination-bullet {
+        width: 20px ;
+        height: 5px;
+        border-radius: 2px;
+    }
+}
